@@ -92,17 +92,17 @@ Buat file `.env` di root proyek berdasarkan template berikut:
 ```env
 # ── DATABASE (Supabase PostgreSQL) ─────────────────────────
 # Gunakan Connection Pooling untuk operasi normal
-DATABASE_URL="postgresql://postgres.<project-ref>:<password>@aws-1-ap-northeast-1.pooler.supabase.com:6543/postgres?pgbouncer=true"
+DATABASE_URL="..."
 
 # Gunakan Direct Connection untuk migrasi/push schema
-DIRECT_URL="postgresql://postgres.<project-ref>:<password>@aws-1-ap-northeast-1.pooler.supabase.com:5432/postgres"
+DIRECT_URL="..."
 
 # ── SUPABASE STORAGE ────────────────────────────────────────
-NEXT_PUBLIC_SUPABASE_URL="https://<project-ref>.supabase.co"
-SUPABASE_SERVICE_ROLE_KEY="your-supabase-service-role-key"
+NEXT_PUBLIC_SUPABASE_URL="..."
+SUPABASE_SERVICE_ROLE_KEY="..."
 
 # ── JWT SECRET ──────────────────────────────────────────────
-JWT_SECRET="your-random-secret-key-min-32-chars"
+JWT_SECRET="..."
 ```
 
 > **Cara mendapatkan kredensial Supabase:**
